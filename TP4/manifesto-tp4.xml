@@ -5,7 +5,7 @@
         <id>PRI_TP4_2018</id>
         <título>Criação de um servidor em Node.js para um Website</título>
         <subtítulo></subtítulo>
-        <dinício>12/10/2018</dinício>
+        <dinício>11/10/2018</dinício>
         <dfim>12/10/2018</dfim>
         <supervisor>
             <nome>José Carlos Ramalho</nome>
@@ -23,11 +23,11 @@
         </elemento>
     </equipe>
     <resumo>
-        <para>O objetivo neste trabalho é usando o Node.js criar um servidor de modo a suportar um Website (neste caso o criado a partir de <i>arquivo-musica-digital.xml</i> usando uma <i>stylesheet</i>).</para>
-        <para>O servidor deve receber respostas e consoante o <b>URL</b> fornecido deve apresentar a página correta, bem como claro, o endereçamento do Webite deve funcionar corretamente.</para>
+        <para>O objetivo neste trabalho é usando o Node.js, criar um servidor de modo a suportar um Website (neste caso o Website criado a partir de <i>arquivo-musica-digital.xml</i> usando uma <i>stylesheet</i>).</para>
+        <para>O servidor deve receber respostas e consoante o <b>URL</b> fornecido deve apresentar a página correta, bem como claro, o endereçamento do Website deve funcionar corretamente.</para>
     </resumo>
     <resultados>
         <resultado path="https://github.com/jcm300/PRI">Repositório no GitHub</resultado>
-        <resultado path="manifesto-tp3.html">manifesto em HTML</resultado>
+        <resultado path="https://github.com/jcm300/PRI/tree/master/TP4">Pasta do TP4</resultado>
     </resultados>
 </manifesto>
