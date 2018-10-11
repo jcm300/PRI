@@ -5,8 +5,8 @@ var url = require('url')
 http.createServer((req, res) => {
     var purl = url.parse(req.url, true)
 
-    if(purl.pathname=="/") var filePath = "./website/index.html"
-    else var filePath = "./website" + purl.pathname
+    if(purl.pathname=="/" || purl.pathname=="/index.html") var filePath = "./website/index.html"
+    else var filePath = "./website" + purl.pathname + purl.query.id + ".html"
 
     fs.readFile(filePath, (erro, dados) => {
         res.writeHead(200, { 'Content-Type': 'text/html' })
