@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE manifesto SYSTEM "file:/home/jcm300/1ºSemestre/PRI/manifesto.dtd">
+<manifesto>
+    <meta>
+        <id>PRI_TP5_2018</id>
+        <título>Criação de um servidor em Node.js para um Website</título>
+        <subtítulo></subtítulo>
+        <dinício>17/10/2018</dinício>
+        <dfim>18/10/2018</dfim>
+        <supervisor>
+            <nome>José Carlos Ramalho</nome>
+            <email>jcr@di.uminho.pt</email>
+            <website>http://www.di.uminho.pt/~jcr</website>
+        </supervisor>
+    </meta>
+    <equipe>
+        <elemento>
+            <id>a78821</id>
+            <nome>José Carlos Lima Martins</nome>
+            <email>a78821@alunos.uminho.pt</email>
+            <website>https://www.linkedin.com/in/jose-carlos-martins</website>
+            <foto path=""/>
+        </elemento>
+    </equipe>
+    <resumo>
+        <para>O objetivo neste trabalho é usar o <b>Node.js</b> para criar um servidor de modo a suportar um <i>Website</i> a partir dos varios ficheiros <b>JSON</b> gerados do <i>arquivo-musica-digital.xml</i>.</para>
+        <para>De modo a criar o <i>Website</i> é criado um índice a partir dos ficheiros <b>JSON</b>.</para>
+        <para>Para além disso, uma das tarefas é usar <i>templates</i> para as páginas, de modo a que para apresentar uma página <i>Web</i>, a mesma é obtida através da inserção dos dados presentes nos <b>JSON's</b> nas <i>templates</i>. Para tal é usado o <b>Pug</b>.</para>
+        <para>Por fim, o servidor deve receber endereços e responder ao cliente de forma correta, consoante o endereço fornecido.</para>
+    </resumo>
+    <resultados>
+        <resultado path="https://github.com/jcm300/PRI">Repositório no GitHub</resultado>
+        <resultado path="https://github.com/jcm300/PRI/tree/master/TP5">Pasta do TP5</resultado>
+    </resultados>
+</manifesto>

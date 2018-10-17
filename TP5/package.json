@@ -1,0 +1,19 @@
+{
+  "name": "tp5",
+  "version": "1.0.0",
+  "description": "Servidor construido de modo a disponibilizar as obras do arquivo musical",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jcm300/PRI/tree/master/TP5"
+  },
+  "author": "José Carlos Lima Martins",
+  "license": "MIT",
+  "dependencies": {
+    "pug": "^2.0.3"
+  }
+}
