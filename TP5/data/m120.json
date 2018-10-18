@@ -12,20 +12,9 @@
     
   
         "compositor": "Ferrer Ferran",
-    
-  
-    
-      
-        Pasodoblecompuesto para conmemorarel número 100 de la revista "Música i Poble" que edita la 
-        Federación de Sociedades Musicales de la Comunidad Valenciana.
-      
-        Un pasodoble típico valenciano con una evolución armónica, lo convierte en una obra colorista 
-        y original que, con la cadencia de la trompeta,le da una personalidad de carácter español,
-        pudiéndose así interpretar tanto en concierto como en los típicos pasacalles de nuestra tierra 
-        valenciana.
-    
-  
-  
+   
+        "desc": "Pasodoblecompuesto para conmemorarel número 100 de la revista 'Música i Poble' que edita la Federación de Sociedades Musicales de la Comunidad Valenciana. Un pasodoble típico valenciano con una evolución armónica, lo convierte en una obra colorista y original que, con la cadencia de la trompeta,le da una personalidad de carácter español, pudiéndose así interpretar tanto en concierto como en los típicos pasacalles de nuestra tierra valenciana.",
+
         "instrumentos": [
     
         {"nome": "Bombo",
