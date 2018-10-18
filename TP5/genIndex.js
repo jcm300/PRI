@@ -21,5 +21,13 @@ function createJson(files){
 module.exports = function genIndex(){
     var contents = fs.readdirSync("data")
     var files = contents.filter(isNotDirectory)
-    fs.writeFileSync("data/index.json",createJson(files))
+    var json = JSON.parse(createJson(files))
+    
+    //ordenar por titulo
+    json.obras.sort(function(a,b){
+        if(a.titulo < b.titulo) return -1
+        if(a.titulo > b.titulo) return 1
+        return 0
+    })
+    fs.writeFileSync("data/index.json",JSON.stringify(json))
 }
