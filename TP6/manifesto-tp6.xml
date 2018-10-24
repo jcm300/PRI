@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE manifesto SYSTEM "file:/home/jcm300/1ºSemestre/PRI/manifesto.dtd">
+<manifesto>
+    <meta>
+        <id>PRI_TP6_2018</id>
+        <título>Criação de um servidor em Node.js para registo de teses</título>
+        <subtítulo></subtítulo>
+        <dinício>24/10/2018</dinício>
+        <dfim>24/10/2018</dfim>
+        <supervisor>
+            <nome>José Carlos Ramalho</nome>
+            <email>jcr@di.uminho.pt</email>
+            <website>http://www.di.uminho.pt/~jcr</website>
+        </supervisor>
+    </meta>
+    <equipe>
+        <elemento>
+            <id>a78821</id>
+            <nome>José Carlos Lima Martins</nome>
+            <email>a78821@alunos.uminho.pt</email>
+            <website>https://www.linkedin.com/in/jose-carlos-martins</website>
+            <foto path=""/>
+        </elemento>
+    </equipe>
+    <resumo>
+        <para>O objetivo neste trabalho é usar o <b>Node.js</b> para criar um servidor no qual o website permite o registo de teses.</para>
+        <para>A tese deve possuir o título, a data e o seu tipo: Mestrado ou Doutoramento.</para>
+        <para>Já em relação ao aluno deve possuir o seu nome, o número de identificação, o curso e a instituição.</para>
+        <para>O website deve possuir uma página principal com todos os serviços disponíveis, sendo um dos serviços, listar todas as teses já registadas e outro dos serviços é obviamente, o registo de teses.</para>
+    </resumo>
+    <resultados>
+        <resultado path="https://github.com/jcm300/PRI">Repositório no GitHub</resultado>
+        <resultado path="https://github.com/jcm300/PRI/tree/master/TP6">Pasta do TP6</resultado>
+    </resultados>
+</manifesto>

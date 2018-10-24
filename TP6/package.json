@@ -1,0 +1,19 @@
+{
+  "name": "tp6",
+  "version": "1.0.0",
+  "description": "Servidor que permite o registo de teses",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jcm300/PRI/tree/master/TP6"
+  },
+  "author": "José Carlos Lima Martins",
+  "license": "MIT",
+  "dependencies": {
+    "jsonfile": "^5.0.0",
+    "pug": "^2.0.3"
+  }
+}
