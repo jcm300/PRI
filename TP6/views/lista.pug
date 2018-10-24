@@ -1,0 +1,33 @@
+extends layout
+
+block conteudo
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-red
+                h1 Lista com as Teses Registadas
+            .w3-container
+                table.w3-table-all.w3-border(border="1")
+                    tr
+                        th(colspan="4") Aluno
+                        th(colspan="3") Tese
+                    tr
+                            th Nome
+                            th Número/Identificador
+                            th Curso
+                            th Instituição
+                            th Título
+                            th Data
+                            th Tipo
+                    each tese in teses
+                        tr
+                            td= tese.nome
+                            td= tese.numero
+                            td= tese.curso
+                            td= tese.instituicao
+                            td= tese.titulo
+                            td= tese.data
+                            td= tese.tipo
+            footer.w3-container.w3-red
+                h6
+                    a(href="http://localhost:4006/") Voltar à página principal
+                address Gerado por RegTeseApp by José Carlos Lima Martins
