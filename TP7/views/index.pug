@@ -1,0 +1,31 @@
+extends layout
+
+block content
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-grey
+                h1 Submissão de Ficheiros
+            .w3-container
+                h3 Novo Ficheiro
+                form.w3-container(action="/processaForm", method="POST", enctype="multipart/form-data")
+                    label
+                        b Ficheiro
+                    input.w3-input.w3-border.w3-grey(type="file", name="nome")
+                    label
+                        b Descrição
+                    input.w3-input.w3-border.w3-grey(type="text", name="desc")
+                    input.w3-btn.w3-grey(type="submit",value="Enviar")
+                br
+                h3 Ficheiros Submetidos
+                table.w3-table-all
+                    tr
+                        th Ficheiro
+                        th Descrição
+                    each f in ficheiros
+                        tr
+                            td
+                                a(href=f.path)= f.nome
+                            td= f.desc
+                br
+            footer.w3-container.w3-grey
+                address Gerado por FishApp by José Carlos Lima Martins
