@@ -1,0 +1,15 @@
+{
+  "name": "tp7",
+  "version": "1.0.0",
+  "description": "Servidor para submissão de ficheiros",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jcm300/PRI/tree/master/TP7"
+  },
+  "author": "José Carlos Lima Martins",
+  "license": "MIT"
+}
