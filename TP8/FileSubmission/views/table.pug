@@ -1,0 +1,8 @@
+tr
+    th Ficheiro
+    th Descrição
+each f in ficheiros
+    tr
+        td
+            a(href=f.path)= f.nome
+        td= f.desc

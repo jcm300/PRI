@@ -1,5 +1,23 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-grey
+                h1 Submissão de Ficheiros
+            .w3-container
+                h3 Novo Ficheiro
+                form.w3-container(id="formFile")
+                    label
+                        b Ficheiro
+                    input.w3-input.w3-border.w3-grey(id="files" type="file")
+                    label
+                        b Descrição
+                    input.w3-input.w3-border.w3-grey(id="desc" type="text")
+                    button.w3-button.w3-grey(id="sendFile") Enviar
+                br
+                h3 Ficheiros Submetidos
+                table.w3-table-all(id="table")
+                br
+            footer.w3-container.w3-grey
+                address Gerado por FishApp by José Carlos Lima Martins
