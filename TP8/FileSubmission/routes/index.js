@@ -1,7 +1,6 @@
 var express = require('express')
 var router = express.Router()
 var jsonfile = require("jsonfile")
-var fs = require("fs")
 var formidable = require("formidable")
 var fsExtra = require("fs.extra")
 
