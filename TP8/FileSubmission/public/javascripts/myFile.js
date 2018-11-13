@@ -18,10 +18,7 @@ $(() => {
             contentType: false,
             url: "http://localhost:4008/saveFile",
             data: formData,
-            success: n => {
-                if(n!="") alert("Ficheiro gravado com sucesso: " + n)
-                else alert("ERRO: Ficheiro não foi gravado!")
-            },
+            success: n => alert("Ficheiro gravado com sucesso: " + n),
             error: e => {
                 alert("Erro no post: " + JSON.stringify(e))
                 console.log("ERRO: " + e)

@@ -16,11 +16,11 @@ router.get("/table", (req,res) => {
     })
 })
 
-router.get("/uploaded/*",(req,res)=>{
+router.get("/uploaded/:file",(req,res)=>{
     jsonfile.readFile(myBD,(erro,dados)=>{
         if(!erro){
             var filepath = req.url
-            var type = dados.find(e => e.path==filepath).type
+            var type = dados.find(e => e.nome==req.params.file).type
             res.writeHead(200,{"Content-Type": type})
             fs.readFile(filepath, (erro2,dados)=>{
                 if(!erro2) res.write(dados)
@@ -55,22 +55,22 @@ router.post("/saveFile",(req,res)=>{
                                     res.json(formData.file.name)
                                 }else{
                                     console.log("Erro: " + erro4)
-                                    res.json("")
+                                    res.status(500).json(erro4)
                                 }   
                             })
                         }else{
                             console.log("Erro: " + erro3)
-                            res.json("")
+                            res.status(500).json(erro3)
                         }   
                     })
                 }else{
                     console.log("Erro: " + erro2)
-                    res.json("")
+                    res.status(500).json(erro2)
                 }
             })
         }else{
             console.log("Erro: " + erro)
-            res.json("")
+            res.status(500).json(erro)
         }   
     })
 })
