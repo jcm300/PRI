@@ -1,7 +1,6 @@
 var express = require('express')
 var router = express.Router()
 var jsonfile = require("jsonfile")
-var fs = require("fs")
 var formidable = require("formidable")
 var fsExtra = require("fs.extra")
 
@@ -13,22 +12,6 @@ router.get("/table", (req,res) => {
     jsonfile.readFile(myBD, (erro,dados)=>{
         if(!erro) res.render("table", {ficheiros: dados})
         else res.json(erro)
-    })
-})
-
-router.get("/uploaded/:file",(req,res)=>{
-    jsonfile.readFile(myBD,(erro,dados)=>{
-        if(!erro){
-            var filepath = req.url
-            var type = dados.find(e => e.nome==req.params.file).type
-            res.writeHead(200,{"Content-Type": type})
-            fs.readFile(filepath, (erro2,dados)=>{
-                if(!erro2) res.write(dados)
-                else res.json(erro2)
-            })
-        }else{
-            res.json(erro)
-        }
     })
 })
 
@@ -46,8 +29,7 @@ router.post("/saveFile",(req,res)=>{
                         if(!erro3){
                             var fich = {nome: formData.file.name,
                                         path: "/uploaded/" + formData.file.name,
-                                        desc: fields.desc,
-                                        type: formData.file.type}
+                                        desc: fields.desc}
                             dados.push(fich)
                             jsonfile.writeFile(myBD, dados, erro4 =>{
                                 if(!erro4){
