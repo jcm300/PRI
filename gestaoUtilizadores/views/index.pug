@@ -1,0 +1,41 @@
+extends layout
+
+block content
+    .w3-card-4
+        header.w3-container.w3-teal
+            h1 User Management
+        .w3-container
+            .w3-container
+                h3 Create User
+                form.w3-container
+                    label Name
+                    input.w3-input(id="nameC", type="text")
+                    label Email
+                    input.w3-input(id="emailC", type="text")
+                    label Password
+                    input.w3-input(id="passwordC", type="password")
+                    button.w3-button.w3-border(id="createUser") Create User
+            .w3-container
+                h3 Update User
+                form.w3-container
+                    label Id
+                    input.w3-input(id="idU", type="text")
+                    label Name
+                    input.w3-input(id="nameU", type="text")
+                    label Email
+                    input.w3-input(id="emailU", type="text")
+                    label Password
+                    input.w3-input(id="passwordU", type="password")
+                    button.w3-button.w3-border(id="updateUser") Update User
+            .w3-container
+                h3 List Users
+                button.w3-button.w3-border(id="listUsers") Request
+            .w3-container
+                h3 List User
+                label Id:
+                input.w3-input(type="text" id="idI")
+                button.w3-button.w3-border(id="listUser") Request
+            h3 Result
+            .w3-container(id="result")
+        footer.w3-container.w3-teal
+            address Demo App
